@@ -93,5 +93,3 @@ def main():
                 json_object = json.dumps(scrape(URL))
                 outfile.write(json_object)
         threading.Thread(target=run_scrape())
-
-main()
