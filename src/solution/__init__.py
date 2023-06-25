@@ -87,9 +87,11 @@ def scrape(URL):
     return res
 
 def main():
-  if __name__ == "__main__":
-      def run_scrape():
-          with open("solution.json", "w") as outfile:
-              json_object = json.dumps(scrape(URL))
-              outfile.write(json_object)
-      threading.Thread(target=run_scrape())
+    if __name__ == "__main__":
+        def run_scrape():
+            with open("solution.json", "w") as outfile:
+                json_object = json.dumps(scrape(URL))
+                outfile.write(json_object)
+        threading.Thread(target=run_scrape())
+
+main()
