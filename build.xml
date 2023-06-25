@@ -1,10 +1,10 @@
-<project name="Jython-Cermati-LeadDE" default="dist" basedir=".">
+<project name="solution" default="dist" basedir=".">
   
   <!-- #################################################
        These two properties are the only ones you are 
        likely to want to change for your own projects:     -->
   <property name="jar.name" value="solution.jar" />
-  <property name="java-main-class" value="main" />
+  <property name="java-main-class" value="Main" />
   <!-- ##################################################  -->
 
   <!-- Below here you dont' need to change for simple projects -->
@@ -35,7 +35,7 @@
     <!-- Build main.jar -->
     <jar destfile="${build.dir}/main/main.jar" basedir="${java-build.dir}">
       <manifest>
-	<attribute name="Main-Class" value="main" />
+	<attribute name="Main-Class" value="Main" />
       </manifest>
     </jar>
     <delete file="${java-build.dir}"/>
